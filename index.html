@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pribadi Mahasiswa</title>
+
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+
+<body>
+    <div class="container" id="main-content" title="Profil Pribadi Mahasiswa"> <h1>Profil Pribadi Saya</h1>
+
+        <img 
+            src="nisa.jpeg" 
+            alt="Foto Profil Nisa" 
+            width="200" 
+            height="200" 
+            class="profile-img">
+
+        <div id="identitas-section"> <p><strong>Nama Lengkap:</strong> Nur Anisa Putri</p> 
+            <p><strong>NIM:</strong> 246270004</p> 
+            <p><strong>Hobi Utama:</strong> Crafting</p> 
+        </div>
+
+        <h2>📝 Biodata Diri</h2>
+        <table>
+            <tr>
+                <th>Nama Lengkap</th>
+                <td>Nur Anisa Putri</td>
+            </tr>
+            <tr>
+                <th>Tanggal Lahir</th>
+                <td>5 Juli 2006</td>
+            </tr>
+            <tr>
+                <th>Alamat</th>
+                <td>Jl. Mangga</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>nuranisaputri576@gmail.com</td>
+            </tr>
+        </table>
+
+        <h2>✨ Hobi dan Aktivitas</h2>
+
+        <h3>Daftar Hobi</h3>
+        <ul>
+            <li>Editing</li>
+            <li>Meronce aksesoris manik</li>
+            <li>Searching Internet</li>
+        </ul>
+
+        <h3>Prioritas Aktivitas</h3>
+        <ol>
+            <li>Kuliah dan Tugas</li>
+            <li>Kerja</li>
+            <li>Scrolling sosmed atau shopee</li>
+        </ol>
+
+        <h2>📞 Formulir Kontak Sederhana</h2>
+        <form action="/submit-form" method="post"> <div class="form-group">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required title="Isi dengan nama lengkap Anda"> </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required title="Isi dengan nama gmail Anda"> </div>
+
+            <div class="form-group">
+                <label>Jenis Kelamin:</label>
+                <div class="radio-group">
+                    <input type="radio" id="pria" name="jenis_kelamin" value="Pria" required title="Klik salah satu">
+                    <label for="pria">Pria</label><br>
+                    <input type="radio" id="wanita" name="jenis_kelamin" value="Wanita" required title="Klik salah satu">
+                    <label for="wanita">Wanita</label>
+                </div> </div>
+
+            <div class="form-group">
+                <label>Pilih Hobi (Bisa lebih dari satu):</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="membaca" name="hobi[]" value="Membaca" required title="Klik">
+                    <label for="membaca">Membaca</label><br>
+                    <input type="checkbox" id="olahraga" name="hobi[]" value="Olahraga" required title="Klik">
+                    <label for="olahraga">Olahraga</label><br>
+                    <input type="checkbox" id="menulis" name="hobi[]" value="Menulis" required title="Klik">
+                    <label for="menulis">Menulis</label><br>
+                    <input type="checkbox" id="gaming" name="hobi[]" value="Gaming" required title="Klik">
+                    <label for="gaming">Gaming</label>
+                </div> </div>
+
+            <input type="submit" value="Kirim Data"> </form>
+
+    </div>
+</body>
+</html>
